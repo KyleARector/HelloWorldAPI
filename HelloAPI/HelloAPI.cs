@@ -11,7 +11,7 @@ namespace HelloAPI
 
         // Method to enforce 
         // Can be overridden in child class
-        public void SetMessage(string new_message)
+        public virtual void SetMessage(string new_message)
         {
             if (string.IsNullOrEmpty(new_message))
                 throw new System.ArgumentException("Message can not be null nor empty");
